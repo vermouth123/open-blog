@@ -57,6 +57,7 @@ public class ArticleService {
                         }
                         ArticleVO articleVO = new ArticleVO();
                         String[] strings = brief.toString().split("@@@");
+                        articleVO.setId(f.getName());
                         articleVO.setTitle(strings[0]);
                         articleVO.setContent(strings[2]);
                     }
